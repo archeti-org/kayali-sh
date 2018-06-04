@@ -1,0 +1,4 @@
+[submodule "archeti/client"]
+    path = archeti/client
+    url = git://gitlab.com:archeti/kayali.git
+    branch = staging
