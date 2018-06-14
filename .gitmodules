@@ -1,4 +1,4 @@
-[submodule "archeti/client"]
-    path = archeti/client
+[submodule "archeti/kayali"]
+    path = archeti/kayali
     url = git@gitlab.com:archeti/kayali.git
     branch = staging
