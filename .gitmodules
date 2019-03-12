@@ -1,7 +1,7 @@
 [submodule "archeti/kayali"]
     path = archeti/kayali
     url = git@gitlab.com:archeti/kayali.git
-    branch = staging
+    branch = production
 [submodule "archeti/odoo_addons"]
 	path = archeti/odoo_addons
 	url = git@gitlab.com:archeti/odoo_addons.git
