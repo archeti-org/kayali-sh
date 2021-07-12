@@ -23,7 +23,9 @@ odoo.define('kayali_stock.KayaliLines', function(require) {
 
     ClientAction.include({
         /**
-         * This is mostly just a
+         * This is mostly just a copy of the super _onReload, but since that doesn't return the promise,
+         * the entire function has to be included so I can make sure that the linesWidget has been recreated
+         * before trying to use it
          */
         _onReload: function (ev) {
             ev.stopPropagation();
@@ -57,7 +59,10 @@ odoo.define('kayali_stock.KayaliLines', function(require) {
                 }
 
                 self._reloadLineWidget(self.currentPageIndex);
+                // CUSTOM CODE
+                // ===========
                 self.linesWidget.scrollToRecord(record.data.id);
+                // ===========
                 self.$('.o_show_information').toggleClass('o_hidden', false);
             });
         },
