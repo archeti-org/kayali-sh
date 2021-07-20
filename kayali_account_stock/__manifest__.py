@@ -16,7 +16,7 @@
     'category': 'Custom Development',
 
     # any module necessary for this one to work correctly
-    'depends': ['account', 'stock_barcode'],
+    'depends': ['account', 'stock_barcode', 'sale'],
     'data': [
         'views/templates.xml',
     ],
