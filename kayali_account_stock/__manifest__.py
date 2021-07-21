@@ -18,6 +18,7 @@
     # any module necessary for this one to work correctly
     'depends': ['account', 'stock_barcode', 'sale'],
     'data': [
+        'views/account_invoice_views.xml',
         'views/templates.xml',
     ],
     'installable': True,
